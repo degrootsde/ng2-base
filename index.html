@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Angular 2 Base Project</title>
+
+    <!-- 1. Load libraries -->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/boot')
+                .then(null, console.error.bind(console));
+    </script>
+    <!-- 3. Add some styling -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<!-- 4. Load the application -->
+<body>
+<div class="container">
+    <!-- Place root component here, for instance
+        <my-app>Bezig met laden...</my-app>
+    -->
+</div>
+</body>
+</html>

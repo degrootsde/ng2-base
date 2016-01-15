@@ -1,0 +1,6 @@
+#ignore following files and directories on check-in
+node_modules
+.idea
+app/**/*.js
+app/**/*.map
+
