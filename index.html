@@ -3,6 +3,12 @@
     <title>Angular 2 Base Project</title>
 
     <!-- 1. Load libraries -->
+    <!-- 1a. IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <!-- 1b. Angular libraries and dependencies -->
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
@@ -18,7 +24,7 @@
                 }
             }
         });
-        System.import('app/boot')
+        System.import('app/main')
                 .then(null, console.error.bind(console));
     </script>
     <!-- 3. Add some styling -->
@@ -28,7 +34,7 @@
 <!-- 4. Load the application -->
 <body>
 <div class="container">
-    <!-- Place root component here, for instance
+    <!-- Place root component here, for instance:
         <my-app>Bezig met laden...</my-app>
     -->
 </div>

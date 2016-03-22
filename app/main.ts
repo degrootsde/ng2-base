@@ -2,4 +2,4 @@
 import {bootstrap} from 'angular2/platform/browser';
 
 // bootstrap our app
-bootstrap(/* name of your component here */);
+bootstrap(/* name of component here */);
