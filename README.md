@@ -1,5 +1,5 @@
 # ng2-base
-Leeg basisproject Angular2, gebaseerd op beta.11.
+Leeg basisproject Angular2, gebaseerd op beta.12.
 Zelf componenten en logica toevoegen!
 
 ##Aanwijzingen voor gebruik
