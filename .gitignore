@@ -1,6 +1,8 @@
 #ignore following files and directories on check-in
 node_modules
-typings
+typings/*
+!typings/typings.d.ts
+
 .idea
 app/**/*.js
 app/**/*.map

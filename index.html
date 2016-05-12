@@ -3,29 +3,18 @@
     <title>Angular 2 Base Project</title>
 
     <!-- 1. Load libraries -->
-    <!-- 1a. IE required polyfills, in this exact order -->
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
-    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
-    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
 
-    <!-- 1b. Angular libraries and dependencies -->
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
 
     <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
     <script>
-        System.config({
-            packages: {
-                app: {
-                    format: 'register',
-                    defaultExtension: 'js'
-                }
-            }
-        });
-        System.import('app/main')
-                .then(null, console.error.bind(console));
+        System.import('app').catch(function(err){ console.error(err); });
     </script>
     <!-- 3. Add some styling -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -37,6 +26,9 @@
     <!-- Place root component here, for instance:
         <my-app>Bezig met laden...</my-app>
     -->
+    <hello-world>
+        Bezig met laden...
+    </hello-world>
 </div>
 </body>
 </html>
