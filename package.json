@@ -1,5 +1,6 @@
 {
   "name": "ng2-bgase",
+  "description": "a base repository for angular 2 projects",
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
@@ -34,5 +35,6 @@
     "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
-  }
+  },
+  "author": "Peter Kassenaar <info@kassenaar.com>"
 }
