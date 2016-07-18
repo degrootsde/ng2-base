@@ -11,4 +11,7 @@ import {Component} from '@angular/core';
 
 export class AppComponent {
 	// optional: add constructor, class logic, etc. here
+	constructor() {
+		console.log('Hello World - Angular 2 is running')
+	}
 }
