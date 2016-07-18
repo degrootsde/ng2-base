@@ -1,6 +1,6 @@
 # ng2-base
-Leeg basisproject Angular2, gebaseerd op rc.1.
-Alleen basiscomponent aanwezig. Verder zelf componenten en logica toevoegen!
+Leeg basisproject Angular2, gebaseerd op rc.4.
+Alleen basiscomponent met constructor aanwezig. Verder zelf componenten en logica toevoegen!
 
 ##Aanwijzingen voor gebruik
 - clone deze repository op je desktop
