@@ -1,5 +1,5 @@
 # ng2-base
-Leeg basisproject Angular2, gebaseerd op rc.4.
+Leeg basisproject Angular2, gebaseerd op Angular 2 final (15-09-2016).
 Alleen basiscomponent met constructor aanwezig. Verder zelf componenten en logica toevoegen!
 
 ##Aanwijzingen voor gebruik

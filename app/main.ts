@@ -1,6 +1,8 @@
-// import dependencies (don't forget to import your component!)
-import {bootstrap} from '@angular/platform-browser-dynamic';
-import {AppComponent} from "./app.component";
+// 1. Import bootstrapping dependencies
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
-// bootstrap our app
-bootstrap(AppComponent);
+// 2. Import or own  module
+import {AppModule} from './app.module';
+
+// 3. Bootstrap our app
+platformBrowserDynamic().bootstrapModule(AppModule);

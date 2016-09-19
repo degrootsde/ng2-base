@@ -1,17 +1,21 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-	// 1. add component description/annotations here
-	selector: 'hello-world',
-	template: `
+    // 1. add component description/annotations here
+    selector: 'hello-world',
+    template: `
 		<h1>Hello World!</h1>
-		<h2>Dit is Angular 2</h2>
+		<h2>Dit is Angular 2 - final release</h2>
+		<a href="http://angular.io" target="_blank">Angular Website</a>
 	`
 })
 
-export class AppComponent {
-	// optional: add constructor, class logic, etc. here
-	constructor() {
-		console.log('Hello World - Angular 2 is running')
-	}
+export class AppComponent implements OnInit {
+    // optional: add constructor, class logic, etc. here
+    constructor() {
+    }
+
+    ngOnInit() {
+        console.log('Hello World - Angular 2 is running')
+    }
 }
