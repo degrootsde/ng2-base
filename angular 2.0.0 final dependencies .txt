@@ -123,6 +123,10 @@
 
 
 
+// *******************
+// Stap 1b. Dependencies installeren
+// *******************
+Draai vanaf de Command Line de opdracht `npm install` om alle libraries die je hierboven hebt aangegeven te installeren.
 
 // *******************
 // Stap 2. Component maken 
